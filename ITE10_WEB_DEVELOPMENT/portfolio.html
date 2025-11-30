@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio • Stanley Glen Barrientos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="portfolio-body">
+<button class="btn primary logout-btn" id="logout">Logout</button>
+<!-- removed top logo for portfolio page to avoid duplication -->
+<!-- keep a single logo positioned in the bottom-right -->
+<div class="portfolio-wrap">
+<section class="hero">
+<div class="hero-header">
+<img class="profile-img reveal-target" src= "Unknown.jpg" alt="Profile">
+<div>
+<h1 class="reveal-target">I'm Stanley Glen Barrientos</h1>
+  <h2 class="reveal-target">From Caraga State University – Cabadbaran Campus</h2>
+  <div class="socials">
+    <a class="btn primary" href="https://www.facebook.com/stanleyglen.barrientos" target="_blank" rel="noopener">Facebook</a>
+    <a class="btn primary" href="https://www.instagram.com/stanleyglennn/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</div>
+</div>
+<p class="reveal-target">Passionate and evolving web developer focused on building modern, responsive interfaces and learning backend fundamentals. Driven by curiosity, creativity, and clean, effective code.</p>
+<div class="skills">
+<div class="skill"><span class="dot"></span><span>HTML, CSS, JavaScript</span></div>
+<div class="skill"><span class="dot"></span><span>Responsive Web Design</span></div>
+<div class="skill"><span class="dot"></span><span>UI/UX fundamentals</span></div>
+<div class="skill"><span class="dot"></span><span>Basic backend concepts</span></div>
+</div>
+<div id="projects" class="projects">
+<div class="card" data-url="https://img.freepik.com/free-vector/futuristic-red-interface-elements_107791-32154.jpg?semt=ais_hybrid&w=740&q=80"><h3>Project One</h3><p>Dark UI with responsive layout and interactive components.</p></div>
+<div class="card" data-url="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/62016bb7f21892c42fb16967_61fa8be098a5d508fba43c95_Image-Gallery-5-.jpeg"><h3>Project Two</h3><p>Portfolio micro-site with glowing accents and smooth animations.</p></div>
+<div class="card" data-url="https://dianabirkelbach.wordpress.com/wp-content/uploads/2025/02/image-1-6.png"><h3>Project Three</h3><p>Form-driven app exploring validation and local storage.</p></div>
+<div class="card" data-url="https://static.vecteezy.com/system/resources/previews/007/408/034/non_2x/home-page-landing-page-red-geometric-template-landing-business-page-digital-website-landing-page-design-concept-vector.jpg"><h3>Project Four</h3><p>Landing page prototype with cyber-styled visuals.</p></div>
+<div class="card" data-url="https://thumbs.dreamstime.com/b/binary-code-digital-data-stream-386080198.jpg"><h3>Project Five</h3><p>Code-focused concept showcasing binary-inspired visuals.</p></div>
+</div>
+<div class="cta">
+<a class="btn primary" href="#projects">View My Projects</a>
+<a class="btn primary" href="tel:09526539607">Phone</a>
+</div>
+
+<section id="ratings" class="ratings-section">
+  <h3>Project Ratings</h3>
+  <div class="rating-item" data-name="Project One" data-init="75">
+    <div class="rating-top"><span class="rating-label">Project One</span><span class="rating-value">75%</span></div>
+    <div class="rating-bar"><div class="rating-fill"></div></div>
+    <input class="rating-input" type="range" min="0" max="100" step="1" value="75" aria-label="Rate Project One">
+    <div class="feedback-box">Strong visuals; consider smoother transitions.</div>
+  </div>
+  <div class="rating-item" data-name="Project Two" data-init="80">
+    <div class="rating-top"><span class="rating-label">Project Two</span><span class="rating-value">80%</span></div>
+    <div class="rating-bar"><div class="rating-fill"></div></div>
+    <input class="rating-input" type="range" min="0" max="100" step="1" value="80" aria-label="Rate Project Two">
+    <div class="feedback-box">Clean animations and cohesive style.</div>
+  </div>
+  <div class="rating-item" data-name="Project Three" data-init="65">
+    <div class="rating-top"><span class="rating-label">Project Three</span><span class="rating-value">65%</span></div>
+    <div class="rating-bar"><div class="rating-fill"></div></div>
+    <input class="rating-input" type="range" min="0" max="100" step="1" value="65" aria-label="Rate Project Three">
+    <div class="feedback-box">Good structure; refine UI details.</div>
+  </div>
+  <div class="rating-item" data-name="Project Four" data-init="70">
+    <div class="rating-top"><span class="rating-label">Project Four</span><span class="rating-value">70%</span></div>
+    <div class="rating-bar"><div class="rating-fill"></div></div>
+    <input class="rating-input" type="range" min="0" max="100" step="1" value="70" aria-label="Rate Project Four">
+    <div class="feedback-box">Solid layout; enhance hover polish.</div>
+  </div>
+  <div class="rating-item" data-name="Project Five" data-init="85">
+    <div class="rating-top"><span class="rating-label">Project Five</span><span class="rating-value">85%</span></div>
+    <div class="rating-bar"><div class="rating-fill"></div></div>
+    <input class="rating-input" type="range" min="0" max="100" step="1" value="85" aria-label="Rate Project Five">
+    <div class="feedback-box">Outstanding concept and energy.</div>
+  </div>
+</section>
+</section>
+</div>
+<div class="snake-bottom">
+<svg class="snake" viewBox="0 0 800 160" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="snakeGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#e10600"/>
+<stop offset="50%" stop-color="#1a1a1a"/>
+<stop offset="100%" stop-color="#e10600"/>
+</linearGradient>
+</defs>
+<path d="M10,100 C120,40 220,160 330,100 C440,40 540,160 650,100 C710,70 760,130 790,100" fill="none" stroke="url(#snakeGrad2)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="790" cy="100" r="12" fill="#e10600"/>
+</svg>
+</div>
+<div class="overlay" id="overlay">
+<div class="overlay-content"><img id="overlay-img" src="" alt="Project Preview"></div>
+</div>
+</body>
+<script>
+document.querySelectorAll('.card').forEach(c=>{
+  c.addEventListener('click',()=>{
+    const url = c.dataset.url;
+    const img = document.getElementById('overlay-img');
+    img.src = url;
+    document.getElementById('overlay').classList.add('open');
+  });
+});
+document.getElementById('overlay').addEventListener('click',e=>{
+  e.currentTarget.classList.remove('open');
+});
+
+// Ratings logic (robust: handles missing elements, initializes from data-init, persists)
+(function(){
+  const RATINGS_KEY = 'sgb_ratings';
+  const load = ()=>{ try{ return JSON.parse(localStorage.getItem(RATINGS_KEY))||{}; }catch(e){ return {}; } };
+  const save = data=>localStorage.setItem(RATINGS_KEY, JSON.stringify(data));
+  const feedback = v=> v>=85? 'Outstanding polish and futuristic feel.' : v>=70? 'Strong visuals; consider smoother transitions.' : v>=50? 'Good structure; refine UI details.' : v>=30? 'Needs more content and effects.' : 'Work in progress.';
+  const state = load();
+  document.querySelectorAll('.rating-item').forEach((item,i)=>{
+    const name = item.dataset.name || ('Project '+(i+1));
+    const input = item.querySelector('.rating-input');
+    const fill = item.querySelector('.rating-fill');
+    const valueEl = item.querySelector('.rating-value');
+    const fb = item.querySelector('.feedback-box');
+    if(!input || !fill || !valueEl || !fb) return;
+    const init = state[name]!=null ? Number(state[name]) : Number(item.dataset.init||input.value||0);
+    input.value = init;
+    const render = v=>{
+      const val = Math.max(0, Math.min(100, Number(v)||0));
+      fill.style.width = val+'%';
+      valueEl.textContent = val+'%';
+      fb.textContent = feedback(val);
+    };
+    render(init);
+    input.addEventListener('input',()=>{ const v = input.value; render(v); state[name]=Number(v); save(state); });
+    input.addEventListener('change',()=>{ const v = input.value; render(v); state[name]=Number(v); save(state); });
+  });
+})();
+
+// Sequential reveal animation for projects and ratings
+(function(){
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+      if(entry.isIntersecting){
+        const el = entry.target;
+        const i = Number(el.dataset.index || 0);
+        el.style.transitionDelay = (0.12 * i)+'s';
+        el.classList.add('reveal');
+        io.unobserve(el);
+      }
+    });
+  },{threshold:0.15});
+  document.querySelectorAll('#projects .card').forEach((el,idx)=>{ el.dataset.index = idx; io.observe(el); });
+  document.querySelectorAll('#ratings .rating-item').forEach((el,idx)=>{ el.dataset.index = idx; io.observe(el); });
+  document.querySelectorAll('.skills .skill').forEach((el,idx)=>{ el.dataset.index = idx; io.observe(el); });
+  document.querySelectorAll('.cta .btn').forEach((el,idx)=>{ el.dataset.index = idx; io.observe(el); });
+  document.querySelectorAll('.hero .reveal-target').forEach((el,idx)=>{ el.dataset.index = idx; io.observe(el); });
+  document.querySelectorAll('.socials .btn').forEach((el,idx)=>{ el.dataset.index = idx; io.observe(el); });
+})();
+
+// Logout
+document.getElementById('logout')?.addEventListener('click',()=>{
+  localStorage.removeItem('sgb_current');
+  window.location.href = 'index.html';
+});
+</script>
+</html>

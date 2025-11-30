@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login • Stanley Glen Barrientos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+<!-- Background overlay using your second photo placed at images/background.jpg -->
+<div class="bg-overlay"></div>
+<!-- Side snake animation -->
+<div class="snake-container side">
+<svg class="snake" viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="snakeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#e10600"/>
+<stop offset="50%" stop-color="#1a1a1a"/>
+<stop offset="100%" stop-color="#e10600"/>
+</linearGradient>
+</defs>
+<path d="M10,60 C90,10 150,110 230,60 C310,10 370,110 450,60 C530,10 590,110 670,60 C720,30 760,90 790,60" fill="none" stroke="url(#snakeGrad)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="790" cy="60" r="10" fill="#e10600"/>
+</svg>
+</div>
+<!-- Auth card with three tabs: Login / Sign Up / Forgot -->
+<main class="auth-card">
+<div class="tabs">
+<button class="tab-btn active" data-target="login">Login</button>
+<button class="tab-btn" data-target="signup">Sign Up</button>
+<button class="tab-btn" data-target="forgot">Forgot Password</button>
+</div>
+<!-- Forms container -->
+<section class="form-wrap">
+<form id="login" class="form active">
+<h1 class="title">Login</h1>
+<div class="field"><input id="login-username" type="text" placeholder="Username" autocomplete="username"></div>
+<div class="field"><input id="login-password" type="password" placeholder="Password" autocomplete="current-password"></div>
+<button type="submit" class="btn primary">Login</button>
+</form>
+<form id="signup" class="form">
+<h1 class="title">Create Account</h1>
+<div class="field"><input id="signup-username" type="text" placeholder="Username" autocomplete="username"></div>
+<div class="field"><input id="signup-password" type="password" placeholder="Password" autocomplete="new-password"></div>
+<button type="submit" class="btn primary">Sign Up</button>
+</form>
+<form id="forgot" class="form">
+<h1 class="title">Reset Password</h1>
+<div class="field"><input id="forgot-username" type="text" placeholder="Username" autocomplete="username"></div>
+<div class="field"><input id="forgot-password" type="password" placeholder="New Password" autocomplete="new-password"></div>
+<button type="submit" class="btn primary">Reset</button>
+</section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
